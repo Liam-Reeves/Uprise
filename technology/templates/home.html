@@ -1,9 +1,24 @@
-{% extends 'layout.html'%}
-{% load static %}
+{% extends 'layout.html' %} {% load static %} {% block body %}
+<link rel="stylesheet" href="{% static  'css/main.css' %}" />
+
+<div class="background-image-container">
+  <div class="center-text">
+    <h1>Explore, Upgrade</h1>
+    <button>Shop Now</button>
+  </div>
+</div>
+<h1 class="category-heading">Featured <span>Products</span></h1>
+<div class="category-container">
+  <div class="category-cards">
+    {% for productcard in productcard %}
+    <div class="category-card">
+      <img src="{{ productcard.image.url }}" alt="product_image" />
+      <p>{{productcard.name}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
 
-{% block body %}
 
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
-
-{% endblock%}
+{% endblock %}
