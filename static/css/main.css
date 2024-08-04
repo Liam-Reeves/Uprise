@@ -94,7 +94,7 @@ h1 {
   margin: 10px;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #0b0b0b;
   padding: 16px;
   overflow: hidden;
@@ -116,5 +116,105 @@ h1 {
   margin-bottom: 20px;
 }
 .category-heading span {
-  color: #873600;
+  color: #138a75;
+}
+.service-container {
+  background-color: #0b0b0b;
+  height: 30vh;
+  align-items: center;
+}
+.service-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+.support-card {
+  background-color: #d0d3d4;
+  text-align: center;
+  color: #0b0b0b;
+  width: 180px;
+  height: 80px;
+  margin-top: 30px;
+
+  padding: 20px;
+}
+
+.support-card i {
+  color: #138a75;
+  font-size: 20px;
+}
+
+.shipping-card {
+  background-color: #d0d3d4;
+  text-align: center;
+  color: #0b0b0b;
+  width: 180px;
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+.shipping-card i {
+  color: #dd1735;
+  font-size: 25px;
+}
+.quality-card {
+  background-color: #d0d3d4;
+  text-align: center;
+  color: #0b0b0b;
+  width: 180px;
+  height: 80px;
+  margin-top: 30px;
+
+  padding: 20px;
+}
+
+.quality-card i {
+  color: #f79726;
+  font-size: 20px;
+}
+.payment-card {
+  background-color: #d0d3d4;
+  text-align: center;
+  color: #0b0b0b;
+  width: 180px;
+  height: 80px;
+  margin-top: 30px;
+
+  padding: 20px;
+}
+
+.payment-card i {
+  color: #36e51a;
+  font-size: 20px;
+}
+
+.omega-container {
+ 
+  background: #d0d3d4;
+  
+}
+.operation{
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.operation h4{
+  color: #0b0b0b;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.operation i{
+  font-size: 30px;
+}
+
+.social-links{
+  gap: 5px;
+  margin-left: 500px;
+  margin-right: 30px;
+  float: right;
 }
