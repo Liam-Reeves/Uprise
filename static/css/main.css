@@ -103,7 +103,6 @@ h1 {
   color: #138a75;
 }
 .why-us-card-container {
-  
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -180,78 +179,6 @@ h1 {
 }
 .category-heading span {
   color: #138a75;
-}
-.service-container {
-  background-color: #0b0b0b;
-  height: 30vh;
-  align-items: center;
-}
-.service-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 20px;
-}
-.support-card {
-  background-color: #d0d3d4;
-  text-align: center;
-  color: #0b0b0b;
-  width: 180px;
-  height: 80px;
-  margin-top: 30px;
-
-  padding: 20px;
-}
-
-.support-card i {
-  color: #138a75;
-  font-size: 20px;
-}
-
-.shipping-card {
-  background-color: #d0d3d4;
-  text-align: center;
-  color: #0b0b0b;
-  width: 180px;
-  height: 80px;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  padding: 20px;
-}
-.shipping-card i {
-  color: #dd1735;
-  font-size: 25px;
-}
-.quality-card {
-  background-color: #d0d3d4;
-  text-align: center;
-  color: #0b0b0b;
-  width: 180px;
-  height: 80px;
-  margin-top: 30px;
-
-  padding: 20px;
-}
-
-.quality-card i {
-  color: #f79726;
-  font-size: 20px;
-}
-.payment-card {
-  background-color: #d0d3d4;
-  text-align: center;
-  color: #0b0b0b;
-  width: 180px;
-  height: 80px;
-  margin-top: 30px;
-
-  padding: 20px;
-}
-
-.payment-card i {
-  color: #36e51a;
-  font-size: 20px;
 }
 
 .omega-container {
