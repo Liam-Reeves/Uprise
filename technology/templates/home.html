@@ -66,7 +66,6 @@
   </div>
 </div>
 <!-- Contact section -->
-
 <div class="contact-container">
   <div class="contact-details">
     <p class="contact-heading">Contact <span>Uprise</span></p>
@@ -91,23 +90,50 @@
     ></iframe>
   </div>
 </div>
- 
-<!-- Testimonial section -->
-  <h1 class="testimonial-heading">Testimonials <span>About</span></h1>
-  <div class="testimonial-container">
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "UpRise has been a great platform for my business, I've been able to find the perfect phone and laptop accessories at a lower price than any other store. I highly recommend this platform!"
-      </p>
-      <p class="testimonial-author">
-        - Morgan Sagala, <span>Customer</span>
-      </p>
-    </div>
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "I've used Uprise for years now and I can't say enough good things about their customer service. I've had multiple phone and laptop accessories delivered to my doorstep and they've always met my needs."
-      </p>
-      <p class="testimonial-author">
 
+<!-- Testimonial section -->
+<div class="testimonial-container">
+  <h4>
+    Here from <span>Our <br />Clients</span>
+  </h4>
+  <div class="testimonial-slides">
+    {% for testimonial in testimonial %}
+    <div class="testimonial-slide">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+
+      <p>{{testimonial.message}}</p>
+      <h5>{{testimonial.name}}</h5>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+<!-- Footer section -->
+  <div class="footer-container">
+    <div class="footer-content">
+      <form action="">
+        <h3>Send Us a Message</h3>
+        <input class="field-1" type="text" placeholder="Name" required /><br>
+        <input class="field-2" type="email" placeholder="Email" required /><br>
+        <textarea placeholder="Message" required></textarea><br>
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+      <div class="social-icons">
+        <h2>Follow Us: </h2>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+  </div>
+  <p>
+    &copy; 2024 Uprise Technologies. All rights reserved.
+  </p>
+</div>
 
 {% endblock %}
