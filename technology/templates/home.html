@@ -1,13 +1,14 @@
 {% extends 'layout.html' %} {% load static %} {% block body %}
 <link rel="stylesheet" href="{% static  'css/main.css' %}" />
-
+<!-- Hero section -->
 <div class="background-image-container">
   <div class="center-text">
     <h1>Explore, Upgrade</h1>
     <button>Shop Now</button>
   </div>
 </div>
-<hr />
+
+<!-- Quality Assurance -->
 <div class="assure-container">
   <div class="catch-text">
     <h3>
@@ -20,13 +21,11 @@
       As Uprise we take pride in ensuring you get the best quality <br />
       in accessories to meet your need
     </p>
-    <button>Shop Now</button>
+    <button class="highlight-button">Learn More</button>
   </div>
 </div>
-<hr />
-
+<!-- Why us section -->
 <h2 class="why-us-heading">Why Choose <span>Uprise</span></h2>
-
 <div class="why-us-container">
   <div class="why-us-card-container">
     <div class="why-us-card">
@@ -52,7 +51,9 @@
     </div>
   </div>
 </div>
+<hr />
 
+<!-- Featured products section -->
 <h1 class="category-heading">Featured <span>Products</span></h1>
 <div class="category-container">
   <div class="category-cards">
@@ -64,34 +65,49 @@
     {% endfor %}
   </div>
 </div>
+<!-- Contact section -->
 
-<div class="omega-container">
-  <div class="omega-section">
-    <div class="operation">
-      <i class="fa-solid fa-location-dot"></i>
-      <h4>Physical Location</h4>
-      <p>500m off Scarlet Lounge Kamakis <br />, Along Eastern Bypass,</p>
-      <i class="fa-solid fa-clock"></i>
-      <h4>Opening Hours</h4>
-      <p>Monday - Friday: 9 AM - 10 PM</p>
-      <p>Saturday: 9 AM - 9 PM</p>
-      <p>Sunday: Closed</p>
-
-      <i class="fa-solid fa-phone"></i>
-      <h4>Contact Us</h4>
-      <p>+254 719 719 095</p>
-      <p>Email: uprisetechnologies@gmail.com</p>
-
-      <a href="#"><i class="fab fa-facebook-square"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="social-links"></div>
-    <div class="footer">
-      <p>&copy; 2024 Uprise Technologies. All rights reserved.</p>
-    </div>
+<div class="contact-container">
+  <div class="contact-details">
+    <p class="contact-heading">Contact <span>Uprise</span></p>
+    <i class="fa-solid fa-envelope"></i><br />
+    <p>Email: uprisetechnologies@gmail.com</p>
+    <i class="fa-solid fa-phone"></i><br />
+    <p>Phone: +254 719 719 095</p>
+    <i class="fa-solid fa-location-dot"></i><br />
+    <p>
+      Address: 500m off Scarlet Lounge Kamakis <br />, Along Eastern Bypass,
+    </p>
+  </div>
+  <div class="location-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9876942161964!2d36.970526974360446!3d-1.1691531355080416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f41ce664caa8d%3A0x4b0f9fe34ad64aff!2sUpRise%20Technologies!5e0!3m2!1sen!2ske!4v1722943668944!5m2!1sen!2ske"
+      width="600"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 </div>
+ 
+<!-- Testimonial section -->
+  <h1 class="testimonial-heading">Testimonials <span>About</span></h1>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "UpRise has been a great platform for my business, I've been able to find the perfect phone and laptop accessories at a lower price than any other store. I highly recommend this platform!"
+      </p>
+      <p class="testimonial-author">
+        - Morgan Sagala, <span>Customer</span>
+      </p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "I've used Uprise for years now and I can't say enough good things about their customer service. I've had multiple phone and laptop accessories delivered to my doorstep and they've always met my needs."
+      </p>
+      <p class="testimonial-author">
+
+
 {% endblock %}
