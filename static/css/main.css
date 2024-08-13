@@ -460,3 +460,9 @@ textarea {
     box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
   }
 }
+
+.copyright{
+  text-align: center;
+  margin-top: 400px;
+  margin-bottom: 20px ;
+}

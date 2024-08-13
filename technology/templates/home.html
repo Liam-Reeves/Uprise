@@ -7,7 +7,6 @@
     <button>Shop Now</button>
   </div>
 </div>
-
 <!-- Quality Assurance -->
 <div class="assure-container">
   <div class="catch-text">
@@ -41,7 +40,6 @@
       <p>We offer a 1 year warranty on all our products</p>
       <p></p>
     </div>
-
     <div class="why-us-card">
       <i class="fa-solid fa-bullhorn"></i>
       <h4>Customer Service</h4>
@@ -52,7 +50,6 @@
   </div>
 </div>
 <hr />
-
 <!-- Featured products section -->
 <h1 class="category-heading">Featured <span>Products</span></h1>
 <div class="category-container">
@@ -90,7 +87,6 @@
     ></iframe>
   </div>
 </div>
-
 <!-- Testimonial section -->
 <div class="testimonial-container">
   <h4>
@@ -114,13 +110,23 @@
 <!-- Footer section -->
   <div class="footer-container">
     <div class="footer-content">
-      <form action="">
-        <h3>Send Us a Message</h3>
-        <input class="field-1" type="text" placeholder="Name" required /><br>
-        <input class="field-2" type="email" placeholder="Email" required /><br>
-        <textarea placeholder="Message" required></textarea><br>
-        <button class="form-button" type="submit">Submit</button>
-      </form>
+    <form  method="POST">
+      {% csrf_token %}
+
+      <div class="contact_form">
+        <div class="form-field-1">
+          {{contactform.name}}
+        </div>
+      <div class="form-field-2">
+        {{contactform.email}}
+      </div>
+      <div class="form-field-3">
+        {{contactform.message}}
+      </div>
+
+      </div>
+
+    </form>
       <div class="social-icons">
         <h2>Follow Us: </h2>
         <a href=""><i class="fa-brands fa-tiktok"></i></a>
@@ -131,9 +137,23 @@
         </div>
       </div>
   </div>
-  <p>
+  <p class="copyright">
     &copy; 2024 Uprise Technologies. All rights reserved.
   </p>
 </div>
-
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
