@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.db import models
-from .models import Product_Card,Testimonial
+from .models import Product_Card,Testimonial, Carousel_Slide
 from .forms import ContactForm
 
 
