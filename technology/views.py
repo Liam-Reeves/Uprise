@@ -12,6 +12,7 @@ def home(request):
     context ={'productcard': Product_Card.objects.all(),
               'testimonial': Testimonial.objects.all(),
               'contactform': contactform,
+              'home_slide': Carousel_Slide.objects.all(),
               
          }
     contactform = ContactForm()

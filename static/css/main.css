@@ -122,6 +122,10 @@ a {
   gap: 20px;
 }
 
+.category-heading {
+  text-align: center;
+}
+
 .category-cards {
   background: #fff;
   cursor: pointer;
@@ -140,7 +144,6 @@ a {
   border-radius: 5px;
   margin: 10px;
   font-size: 14px;
-
   padding: 16px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
