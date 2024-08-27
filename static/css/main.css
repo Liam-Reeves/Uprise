@@ -7,28 +7,34 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: auto;
 }
-
-
 .navbar-container {
-  background: linear-gradient(90deg, #6ceee4, #2a2a2e);
+  background: #66d6cd;
+  text-align: center;
   display: flex;
   overflow: hidden;
-}
+ }
 .user-icons {
   margin-top: 25px;
   margin-left: 400px;
   cursor: pointer;
 }
-
 .nav-menu,
 li {
+  gap: 2px;
   list-style: none;
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding-left: 80px;
-  margin-top: 19px;
+  margin-top:30px; 
   margin-bottom: 10px;
+  text-align: center;
+  margin-left: 200px;
+
+}
+.nav-menu,
+li,a:hover{
+  color: #f1f1f1;
+  transition: 0.5s ease-in-out;
 }
 .nav-menu,
 li,
@@ -38,6 +44,50 @@ a {
   text-decoration: none;
   color: black;
 }
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+
+}
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 10px;
+  height: 10px;
+}
+.toggle-button, 
+.bar{
+  height: 3px;
+  width: 100%;
+  background-color: white ;
+  border-radius: 10px;
+}
+@media (max-width:400px) {
+  .toggle-button{
+    display: flex;
+    
+  }
+.nav-menu,
+li{
+  display: none;
+}
+
+
+
+  
+}
 
 .assure-container {
   background: #f1f1f1;
@@ -46,7 +96,6 @@ a {
   padding-top: 150px;
   gap: 20px;
 }
-
 .catch-text {
   padding-left: 30px;
   padding-right: 120px;
@@ -100,7 +149,6 @@ a {
   width: 250px;
   color: #0b0b0b;
   text-align: center;
-
   transition: 0.3s ease-in-out;
   height: 300px;
 }
@@ -108,12 +156,10 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
 }
-
 .why-us-card i {
   color: #138a75;
   font-size: 50px;
 }
-
 .category-container {
   display: flex;
   justify-content: center;
@@ -121,11 +167,9 @@ a {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .category-heading {
   text-align: center;
 }
-
 .category-cards {
   background: #fff;
   cursor: pointer;
@@ -166,14 +210,11 @@ a {
 .category-heading span {
   color: #138a75;
 }
-
 .contact-container {
   background: #f1f1f1;
-
   height: 90vh;
   gap: 20px;
 }
-
 .contact-heading {
   margin-top: 100px;
   margin-bottom: 20px;
