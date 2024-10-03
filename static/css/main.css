@@ -390,7 +390,7 @@ textarea {
 }
 
 .social-icons a:nth-child(2):hover {
-  background: #a524b3;
+  background: #e7775f;
   color: #fff;
   transform: translateY(-10px);
   animation: glow-tiktok 1s infinite;

@@ -21,15 +21,5 @@ class Testimonial(models.Model):
     class Meta:
         verbose_name_plural = "Testimonials"
 
-class Carousel_Slide(models.Model):
-    image = models.ImageField(upload_to= "carousel_slide", blank= True)
-    name = models.CharField(max_length=100, blank=False)
-    description=models.TextField(max_length=1000, blank=False)
-
-    def __str__(self):
-       return self.name
-    
-    class Meta:
-        verbose_name_plural = "Carousel_Slide"
 
         

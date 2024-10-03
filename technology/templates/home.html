@@ -1,25 +1,11 @@
 {% extends 'layout.html' %} {% load static %} {% block body %}
 <link rel="stylesheet" href="{% static  'css/main.css' %}" />
 <!-- Hero section -->
- 
-<!-- Carousel section -->
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    {% for home_slide in home_slide %}
-    <div class="carousel-item {% if forloop.counter == 0 %} active {% endif %}" >
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{home_slide.name}}</h5>
-        <p>{{home_slide.description}}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+<div class="hero-section">
+  <img src="{% static 'assets/hero_image.jpg' %}" alt="">
+  <h2>"Power Up Your Tech Life with <span>Our Accessories!</span><h2>
+  <button class="hero">Explore our products</button>
+</div>
 
 </div>
 <!-- Quality Assurance -->

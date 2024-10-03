@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.db import models
-from .models import Product_Card,Testimonial, Carousel_Slide
+from .models import Product_Card,Testimonial
 from .forms import ContactForm
 
 
@@ -12,7 +12,7 @@ def home(request):
     context ={'productcard': Product_Card.objects.all(),
               'testimonial': Testimonial.objects.all(),
               'contactform': contactform,
-              'home_slide': Carousel_Slide.objects.all(),
+              
               
          }
     contactform = ContactForm()
