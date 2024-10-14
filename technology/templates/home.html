@@ -1,0 +1,159 @@
+{% extends 'layout.html' %} {% load static %} {% block body %}
+<link rel="stylesheet" href="{% static  'css/main.css' %}" />
+<!-- Hero section -->
+<div class="background-image-container">
+  <div class="center-text">
+    <h1>Explore, Upgrade</h1>
+    <button>Shop Now</button>
+  </div>
+</div>
+<!-- Quality Assurance -->
+<div class="assure-container">
+  <div class="catch-text">
+    <h3>
+      Discover The Best <br />
+      Phone and Laptop Accessories
+    </h3>
+  </div>
+  <div class="highlight-text">
+    <p>
+      As Uprise we take pride in ensuring you get the best quality <br />
+      in accessories to meet your need
+    </p>
+    <button class="highlight-button">Learn More</button>
+  </div>
+</div>
+<!-- Why us section -->
+<h2 class="why-us-heading">Why Choose <span>Uprise</span></h2>
+<div class="why-us-container">
+  <div class="why-us-card-container">
+    <div class="why-us-card">
+      <i class="fa-solid fa-heart"></i>
+      <h4>Satisfaction Guarantee</h4>
+      <p>
+        We're here to help you find the perfect phone and laptop accessories.
+      </p>
+    </div>
+    <div class="why-us-card">
+      <i class="fa-solid fa-shield-alt"></i>
+      <h4>Warranty</h4>
+      <p>We offer a 1 year warranty on all our products</p>
+      <p></p>
+    </div>
+    <div class="why-us-card">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h4>Customer Service</h4>
+      <p>
+        We're here to help you find the perfect phone and laptop accessories.
+      </p>
+    </div>
+  </div>
+</div>
+<hr />
+<!-- Featured products section -->
+<h1 class="category-heading">Featured <span>Products</span></h1>
+<div class="category-container">
+  <div class="category-cards">
+    {% for productcard in productcard %}
+    <div class="category-card">
+      <img src="{{ productcard.image.url }}" alt="product_image" />
+      <p>{{productcard.name}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- Contact section -->
+<div class="contact-container">
+  <div class="contact-details">
+    <p class="contact-heading">Contact <span>Uprise</span></p>
+    <i class="fa-solid fa-envelope"></i><br />
+    <p>Email: uprisetechnologies@gmail.com</p>
+    <i class="fa-solid fa-phone"></i><br />
+    <p>Phone: +254 719 719 095</p>
+    <i class="fa-solid fa-location-dot"></i><br />
+    <p>
+      Address: 500m off Scarlet Lounge Kamakis <br />, Along Eastern Bypass,
+    </p>
+  </div>
+  <div class="location-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9876942161964!2d36.970526974360446!3d-1.1691531355080416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f41ce664caa8d%3A0x4b0f9fe34ad64aff!2sUpRise%20Technologies!5e0!3m2!1sen!2ske!4v1722943668944!5m2!1sen!2ske"
+      width="600"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+<!-- Testimonial section -->
+<div class="testimonial-container">
+  <h4>
+    Here from <span>Our <br />Clients</span>
+  </h4>
+  <div class="testimonial-slides">
+    {% for testimonial in testimonial %}
+    <div class="testimonial-slide">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+
+      <p>{{testimonial.message}}</p>
+      <h5>{{testimonial.name}}</h5>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+<!-- Footer section -->
+  <div class="footer-container">
+    <div class="footer-content">
+    <form  method="POST">
+      {% csrf_token %}
+
+      <div class="contact_form">
+        <div class="form-field-1">
+          {{contactform.name}}
+        </div>
+      <div class="form-field-2">
+        {{contactform.email}}
+      </div>
+      <div class="form-field-3">
+        {{contactform.message}}
+      </div>
+
+      </div>
+
+    </form>
+      <div class="social-icons">
+        <h2>Follow Us: </h2>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+  </div>
+  <p class="copyright">
+    &copy; 2024 Uprise Technologies. All rights reserved.
+  </p>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
